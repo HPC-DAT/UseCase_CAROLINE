@@ -30,3 +30,9 @@ Step 3: save the selected pixels in the previous step to a new Zarr store.
 1. The source of data: Project Space vs dCache
 2. The loading method: Lazy vs Eager loading
 3. The processing method: Either load the whole Zarr stack into memory in Step 1
+
+|   |  Small Data | (70MB)  |   |  | Big Data | (4.4GB) | | |
+|---|---|---|---|---|---|---|---|---|
+| | Load | Process | Write| All | Load | Process | Write | All |
+| Project Space | 136s | 2.61s | 0.012s | 22.8s | 35.5s | 145s | 0.012s | 120s |
+| dCache | 51.1s | 2.54s | 0.1082s | 92s | 46.8s | 106s | 0.047s | 159s |
