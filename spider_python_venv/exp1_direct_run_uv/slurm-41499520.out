@@ -1,0 +1,16 @@
+2026-10-12 15:53:57,555 - distributed.nanny - INFO -         Start Nanny at: 'tcp://10.0.1.35:40029'
+2026-10-12 15:54:26,524 - distributed.worker - INFO -       Start worker at:      tcp://10.0.1.35:43357
+2026-10-12 15:54:26,524 - distributed.worker - INFO -          Listening to:      tcp://10.0.1.35:43357
+2026-10-12 15:54:26,524 - distributed.worker - INFO -           Worker name:              dask-worker-1
+2026-10-12 15:54:26,525 - distributed.worker - INFO -          dashboard at:            10.0.1.35:42837
+2026-10-12 15:54:26,525 - distributed.worker - INFO - Waiting to connect to:     tcp://10.0.2.201:32945
+2026-10-12 15:54:26,525 - distributed.worker - INFO - -------------------------------------------------
+2026-10-12 15:54:26,525 - distributed.worker - INFO -               Threads:                          4
+2026-10-12 15:54:26,525 - distributed.worker - INFO -                Memory:                  30.00 GiB
+2026-10-12 15:54:26,525 - distributed.worker - INFO -       Local Directory: /tmp/dask-scratch-space/worker-e14tr7rf
+2026-10-12 15:54:26,525 - distributed.worker - INFO - -------------------------------------------------
+2026-10-12 15:54:26,958 - distributed.worker - INFO - Starting Worker plugin shuffle
+2026-10-12 15:54:26,959 - distributed.worker - INFO -         Registered to:     tcp://10.0.2.201:32945
+2026-10-12 15:54:26,959 - distributed.worker - INFO - -------------------------------------------------
+2026-10-12 15:54:26,960 - distributed.core - INFO - Starting established connection to tcp://10.0.2.201:32945
+[2026-10-12T15:54:35.965] error: *** JOB 41499520 ON wn-la-06 CANCELLED AT 2026-10-12T15:54:35 DUE to SIGNAL Terminated ***

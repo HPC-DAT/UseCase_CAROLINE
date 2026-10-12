@@ -1,0 +1,16 @@
+2026-10-12 16:55:51,322 - distributed.nanny - INFO -         Start Nanny at: 'tcp://10.0.3.80:36573'
+2026-10-12 16:55:51,985 - distributed.worker - INFO -       Start worker at:      tcp://10.0.3.80:36873
+2026-10-12 16:55:52,138 - distributed.worker - INFO -          Listening to:      tcp://10.0.3.80:36873
+2026-10-12 16:55:52,138 - distributed.worker - INFO -           Worker name:             SLURMCluster-0
+2026-10-12 16:55:52,138 - distributed.worker - INFO -          dashboard at:            10.0.3.80:34229
+2026-10-12 16:55:52,138 - distributed.worker - INFO - Waiting to connect to:      tcp://10.0.0.52:44961
+2026-10-12 16:55:52,138 - distributed.worker - INFO - -------------------------------------------------
+2026-10-12 16:55:52,138 - distributed.worker - INFO -               Threads:                          4
+2026-10-12 16:55:52,138 - distributed.worker - INFO -                Memory:                  30.00 GiB
+2026-10-12 16:55:52,138 - distributed.worker - INFO -       Local Directory: /tmp/dask-scratch-space/worker-s79bh30p
+2026-10-12 16:55:52,138 - distributed.worker - INFO - -------------------------------------------------
+2026-10-12 16:55:52,149 - distributed.worker - INFO - Starting Worker plugin shuffle
+2026-10-12 16:55:52,149 - distributed.worker - INFO -         Registered to:      tcp://10.0.0.52:44961
+2026-10-12 16:55:52,149 - distributed.worker - INFO - -------------------------------------------------
+2026-10-12 16:55:52,150 - distributed.core - INFO - Starting established connection to tcp://10.0.0.52:44961
+[2026-10-12T16:55:52.851] error: *** JOB 41500041 ON wn-dc-11 CANCELLED AT 2026-10-12T16:55:52 DUE to SIGNAL Terminated ***

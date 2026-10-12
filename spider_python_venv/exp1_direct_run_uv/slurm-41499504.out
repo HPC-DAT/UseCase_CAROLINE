@@ -1,0 +1,29 @@
+Start: Mon Oct 12 03:50:38 PM CEST 2026
+2026-10-12 15:54:36,467 - distributed.scheduler - ERROR - 
+Traceback (most recent call last):
+  File "/project/caroline/Share/users/caroline-oku/squashfs_debug/DePSI/.venv/lib/python3.14/site-packages/distributed/utils.py", line 821, in wrapper
+    return await func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/project/caroline/Share/users/caroline-oku/squashfs_debug/DePSI/.venv/lib/python3.14/site-packages/distributed/scheduler.py", line 5033, in update_graph
+    ) = await offload(
+        ^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/project/caroline/Share/users/caroline-oku/squashfs_debug/DePSI/.venv/lib/python3.14/site-packages/distributed/utils.py", line 1465, in run_in_executor_with_context
+    return await loop.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        executor, lambda: context.run(func, *args, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+asyncio.exceptions.CancelledError
+2026-10-12T15:53:02 Python importing done in main process!
+2026-10-12T15:53:18 Initiating dask cluster...
+2026-10-12T15:54:26 Reading Metadata...
+2026-10-12T15:54:27 Reading SLC stack...
+2026-10-12T15:54:35 Persisting 3 imgs...
+2026-10-12T15:54:35 Closing dask client and cluster...
+2026-10-12T15:54:36 Done!
+End:   Mon Oct 12 03:54:37 PM CEST 2026
+Duration: 239s

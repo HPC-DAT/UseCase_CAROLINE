@@ -1,0 +1,18 @@
+Python 3.14.2
+2026-10-12 18:03:02,896 - distributed.nanny - INFO -         Start Nanny at: 'tcp://10.0.1.94:36121'
+2026-10-12 18:03:05,374 - distributed.worker - INFO -       Start worker at:      tcp://10.0.1.94:45143
+2026-10-12 18:03:05,376 - distributed.worker - INFO -          Listening to:      tcp://10.0.1.94:45143
+2026-10-12 18:03:05,376 - distributed.worker - INFO -           Worker name:             SLURMCluster-0
+2026-10-12 18:03:05,376 - distributed.worker - INFO -          dashboard at:            10.0.1.94:43077
+2026-10-12 18:03:05,376 - distributed.worker - INFO - Waiting to connect to:     tcp://10.0.2.201:33783
+2026-10-12 18:03:05,376 - distributed.worker - INFO - -------------------------------------------------
+2026-10-12 18:03:05,376 - distributed.worker - INFO -               Threads:                          4
+2026-10-12 18:03:05,377 - distributed.worker - INFO -                Memory:                  30.00 GiB
+2026-10-12 18:03:05,377 - distributed.worker - INFO -       Local Directory: /tmp/dask-scratch-space/worker-npmsi43l
+2026-10-12 18:03:05,377 - distributed.worker - INFO - -------------------------------------------------
+2026-10-12 18:03:05,399 - distributed.worker - INFO - Starting Worker plugin shuffle
+2026-10-12 18:03:05,400 - distributed.worker - INFO -         Registered to:     tcp://10.0.2.201:33783
+2026-10-12 18:03:05,400 - distributed.worker - INFO - -------------------------------------------------
+2026-10-12 18:03:05,401 - distributed.core - INFO - Starting established connection to tcp://10.0.2.201:33783
+[2026-10-12T18:03:06.392] error: *** JOB 41504327 ON wn-la-10 CANCELLED AT 2026-10-12T18:03:06 DUE to SIGNAL Terminated ***
+fusermount: failed to unmount /tmp/caroline-oku/venv-41504325: Device or resource busy
