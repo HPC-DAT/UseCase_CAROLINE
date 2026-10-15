@@ -53,17 +53,19 @@ So in general, the execution wall time from dCache has a slight advantage over t
 If zoom into the profiling results, one can observe that the execution time gain from 400K dCache case is on the loading Zarr part.
 
 ![prjspace_400k](prjspace_400k.png)
-![dcache_400k](dcache_400k.png)
+(Loading performance from project space)
 
-(Above: loading performance from project space; Below: loading performance from dCache. Both on 400K PS points.)
+
+![dcache_400k](dcache_400k.png)
+(Loading performance from dCache)
 
 ## Conclusion at this stage (Oct 2026)
 
 At least loading from dCache does not introduce overhead compared to the Spider project space, and it may even provide a slight performance gain. This gain is like due to a more consistent file accessing strategy when using dCache?
 
-## Potential issue when using dCache
+## An addressed issue when using dCache
 
-While testing with dCache, we ran into an error with too many requests:
+While testing with dCache, we ran into an error with too many requests. **This issue has been solved by SURF colleagues.** But I think it is still worth documenting here:
 
 ```python
 raise ClientResponseError(
