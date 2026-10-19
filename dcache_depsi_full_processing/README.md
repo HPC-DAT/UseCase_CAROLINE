@@ -88,6 +88,8 @@ With this increase, the 64 cores processing on dCache finishes successfully. Two
 - dask distributed processing with 32 workers and 4 cores per worker.
 - Potentially even more aggressive scaling tests.
 
+- (Edited on 2026-10-19) An additional profiling for 400K points with 120 CPU cores has finished successfully. No issues were encountered. This indicates that the increased dCache access limits are sufficient for this scale of processing. See `profiling_20261018_040343_dcache_120corse.json`.
+
 Our SURF colleagues' suggestion is to add a retry mechanism when accessing, which can increase the robustness of our workflow on dCache. We can see if this is needed with the scaled up tests.
 
 One last comment is: persisting the cropped SLC stack at the beginning seems to improve the robustness, with a small sacrifice of performance. See `profiling_20261001_140126_400k_dcache_persist_data.json`. With data persisting the workflow is not immune to the "Too Many Requests" error, but it reduces the likelihood of encountering it. This is a test we have done before increasing the dCache access limits.
