@@ -92,7 +92,7 @@ RUN_ID = os.environ.get("SLURM_JOB_ID")
 PATH_VENV_SHM = f"{SHM_BASE}/venv-{RUN_ID}"
 LOCK_FILE = f"{SHM_BASE}/.venv_{RUN_ID}.lock"
 PYTHON = (
-    f"{PATH_VENV_SHM}/bin/python"  # Point Python to the extracted virtual environment
+    f"{PATH_VENV_SHM}/bin/python"  # Point Python to the extracted virtual environment, they are in the same path per worker node
 )
 worker_job_script = [
     f'PATH_VENV_TAR="{PATH_VENV_TAR}"',
